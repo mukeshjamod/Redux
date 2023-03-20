@@ -13,10 +13,11 @@ const authSlice = createSlice({
         },
         logout(state) {
             state.isAuthenticated = false;
-        }
-    }
+        },
+    },
 });
 
 
-export default authSlice;
-//export const authActions = authSlice.actions;
+export const authActions = authSlice.actions;
+
+export default authSlice.reducer;
